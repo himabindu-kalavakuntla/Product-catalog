@@ -1,6 +1,13 @@
 server:
   port: 9090
 
+spring:
+  cloud:
+    config:
+      name: product-catalog
+      uri: http://localhost:8888
+      failFast: false
+
 management:
   endpoint:
     web:
